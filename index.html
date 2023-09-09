@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            property="og:image"
+            content="https://img.freepik.com/premium-photo/rainy-day-3d-weather-icon-3d-render-illustration_11823-2270.jpg"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="loading">
+                <div class="loading-box"></div>
+            </div>
+            <div class="app-container">
+                <div class="search-box" onsubmit="false">
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="Enter a city"
+                    />
+                    <button class="submit">
+                        <img src="./img/search.png" alt="" />
+                    </button>
+                </div>
+                <div class="info">
+                    <img src="" alt="icon" class="image-icon" />
+                    <p class="temp"></p>
+                    <p class="city-name"></p>
+                    <div class="humidity-wind">
+                        <div class="humidity">
+                            <img src="./img/humidity.png" alt="humidity" />
+                            <div>
+                                <p class="number-humidity"></p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="wind">
+                            <img src="./img/wind.png" alt="wind" />
+                            <div>
+                                <p class="number-wind"></p>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message"></div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
